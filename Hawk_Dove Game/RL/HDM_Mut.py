@@ -11,6 +11,7 @@ STRATEGIES = [HAWK, DOVE, MIXED]
 ALPHA = 0.1  # 学习率
 GAMMA = 0.95  # 折扣因子
 EPSILON = 0.1  # 探索率
+MUTATION_RATE = 0.01  # 突变率
 
 class Individual:
     def __init__(self, strategy, num_strategies):
@@ -57,15 +58,45 @@ class Population:
                       [MIXED] * int(size * initial_mixed_fraction))
         self.individuals = [Individual(strategy, len(STRATEGIES)) for strategy in strategies]
 
+    def normalize_strategies(self):
+        hawks = sum(1 for ind in self.individuals if ind.strategy == HAWK)
+        doves = sum(1 for ind in self.individuals if ind.strategy == DOVE)
+        mixed = sum(1 for ind in self.individuals if ind.strategy == MIXED)
+        
+        total = hawks + doves + mixed
+        
+        # 计算新的比例
+        hawk_fraction = hawks / total
+        dove_fraction = doves / total
+        mixed_fraction = mixed / total
+        
+        return hawk_fraction, dove_fraction, mixed_fraction
+
+    def resample_strategies(self, hawk_fraction, dove_fraction, mixed_fraction):
+        size = len(self.individuals)
+        strategies = ([HAWK] * int(size * hawk_fraction) +
+                      [DOVE] * int(size * dove_fraction) +
+                      [MIXED] * int(size * mixed_fraction))
+        
+        # 如果人数有偏差，进行微调
+        while len(strategies) < size:
+            strategies.append(np.random.choice(STRATEGIES))
+        while len(strategies) > size:
+            strategies.pop()
+
+        for i in range(size):
+            self.individuals[i].strategy = strategies[i]
+
     def evolve(self, V, C, mutation_rate, num_generations):
         hawk_fractions = []
         dove_fractions = []
         mixed_fractions = []
 
         for gen in range(num_generations):
-            hawk_fractions.append(sum(1 for ind in self.individuals if ind.strategy == HAWK) / len(self.individuals))
-            dove_fractions.append(sum(1 for ind in self.individuals if ind.strategy == DOVE) / len(self.individuals))
-            mixed_fractions.append(sum(1 for ind in self.individuals if ind.strategy == MIXED) / len(self.individuals))
+            hawk_fraction, dove_fraction, mixed_fraction = self.normalize_strategies()
+            hawk_fractions.append(hawk_fraction)
+            dove_fractions.append(dove_fraction)
+            mixed_fractions.append(mixed_fraction)
 
             for i in range(len(self.individuals)):
                 opponent = np.random.choice(self.individuals)
@@ -74,8 +105,13 @@ class Population:
                 next_max_q_self = np.max(self.individuals[i].q_table)
                 self.individuals[i].update_q_value(action_self, payoff_self, next_max_q_self)
 
+                # 发生突变
                 if np.random.rand() < mutation_rate:
                     self.individuals[i].strategy = np.random.choice(STRATEGIES)
+
+            # 每代结束后重新采样策略分布，确保比例和为1
+            hawk_fraction, dove_fraction, mixed_fraction = self.normalize_strategies()
+            self.resample_strategies(hawk_fraction, dove_fraction, mixed_fraction)
 
         return hawk_fractions, dove_fractions, mixed_fractions
 
