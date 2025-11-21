@@ -1,0 +1,136 @@
+{
+  "title": "Game Theory Learning Platform",
+  "description": "Learn game theory concepts from basic to advanced through hands-on Python exercises",
+  "sections": [
+    {
+      "name": "Introduction to Game Theory",
+      "path": "01_intro",
+      "description": "Start with fundamental concepts and classic games",
+      "exercises": [
+        {
+          "name": "Prisoner's Dilemma",
+          "file": "01_prisoners_dilemma.py",
+          "description": "Learn about the most famous game in game theory"
+        },
+        {
+          "name": "Nash Equilibrium",
+          "file": "02_nash_equilibrium.py",
+          "description": "Understand the concept of Nash Equilibrium"
+        },
+        {
+          "name": "Dominant Strategies",
+          "file": "03_dominant_strategy.py",
+          "description": "Learn to identify dominant strategies"
+        }
+      ]
+    },
+    {
+      "name": "Basic Concepts",
+      "path": "02_basic_concepts",
+      "description": "Core game theory concepts and techniques",
+      "exercises": [
+        {
+          "name": "Zero-Sum Games",
+          "file": "01_zero_sum_games.py",
+          "description": "Understand zero-sum games and their properties"
+        },
+        {
+          "name": "Mixed Strategies",
+          "file": "02_mixed_strategies.py",
+          "description": "Learn about randomized strategies"
+        },
+        {
+          "name": "Payoff Matrices",
+          "file": "03_payoff_matrix.py",
+          "description": "Work with payoff matrices and best responses"
+        },
+        {
+          "name": "Battle of the Sexes",
+          "file": "04_coordination_games.py",
+          "description": "Study coordination games and multiple equilibria"
+        }
+      ]
+    },
+    {
+      "name": "Cooperative Games",
+      "path": "03_cooperative_games",
+      "description": "Games where players can form coalitions",
+      "exercises": [
+        {
+          "name": "Coalition Formation",
+          "file": "01_coalition_formation.py",
+          "description": "Learn how players form coalitions"
+        },
+        {
+          "name": "Shapley Value",
+          "file": "02_shapley_value.py",
+          "description": "Calculate fair payoff distributions"
+        },
+        {
+          "name": "The Core",
+          "file": "03_core.py",
+          "description": "Find stable allocations in cooperative games"
+        }
+      ]
+    },
+    {
+      "name": "Repeated and Dynamic Games",
+      "path": "04_repeated_games",
+      "description": "Games played over multiple rounds",
+      "exercises": [
+        {
+          "name": "Iterated Prisoner's Dilemma",
+          "file": "01_iterated_prisoners_dilemma.py",
+          "description": "Study repeated interactions"
+        },
+        {
+          "name": "Tit-for-Tat Strategy",
+          "file": "02_tit_for_tat.py",
+          "description": "Implement and analyze famous strategies"
+        },
+        {
+          "name": "Folk Theorem",
+          "file": "03_folk_theorem.py",
+          "description": "Understand equilibria in repeated games"
+        },
+        {
+          "name": "Sequential Games",
+          "file": "04_sequential_games.py",
+          "description": "Analyze games with turns using game trees"
+        }
+      ]
+    },
+    {
+      "name": "Advanced Topics",
+      "path": "05_advanced",
+      "description": "Complex scenarios and modern applications",
+      "exercises": [
+        {
+          "name": "Evolutionary Game Theory",
+          "file": "01_evolutionary_games.py",
+          "description": "Study evolutionary stable strategies"
+        },
+        {
+          "name": "Hawk-Dove Game",
+          "file": "02_hawk_dove.py",
+          "description": "Analyze animal conflict behavior"
+        },
+        {
+          "name": "Asymmetric Information",
+          "file": "03_asymmetric_info.py",
+          "description": "Games with incomplete information"
+        },
+        {
+          "name": "Auction Theory",
+          "file": "04_auction_theory.py",
+          "description": "Design and analyze auction mechanisms"
+        },
+        {
+          "name": "Mechanism Design",
+          "file": "05_mechanism_design.py",
+          "description": "Design games to achieve desired outcomes"
+        }
+      ]
+    }
+  ]
+}
