@@ -11,12 +11,13 @@ This is an interactive learning platform for game theory, inspired by [rustlings
 
 ## ✨ Features
 
-- **Progressive Learning**: 19 exercises organized from basic to advanced topics
+- **Progressive Learning**: 34 exercises organized from basic to advanced topics
 - **Interactive CLI**: Real-time feedback and validation
-- **Comprehensive Coverage**: From Nash Equilibrium to Auction Theory
+- **Comprehensive Coverage**: Complete game theory curriculum from fundamentals to cutting-edge research
 - **Hands-on Practice**: Learn by implementing game theory concepts in code
 - **Watch Mode**: Auto-run exercises as you edit them
 - **Progress Tracking**: Save your progress automatically
+- **Real-World Applications**: Market design, voting systems, network formation, auctions
 
 ## 🎯 Learning Path
 
@@ -48,6 +49,31 @@ This is an interactive learning platform for game theory, inspired by [rustlings
 - Asymmetric Information - Bayesian games and signaling
 - Auction Theory - Mechanism design for resource allocation
 - Mechanism Design - Reverse game theory
+
+### 💰 **Bargaining and Negotiation** (3 exercises)
+- Nash Bargaining Solution - Axiomatic approach to fairness
+- Rubinstein Bargaining - Strategic alternating offers
+- Ultimatum Game - Behavioral game theory and fairness
+
+### 🎓 **Matching Theory and Market Design** (3 exercises)
+- Stable Marriage Problem - Gale-Shapley algorithm
+- College Admissions - Many-to-one matching
+- Kidney Exchange - Nobel Prize application
+
+### 🗳️ **Voting and Social Choice** (3 exercises)
+- Voting Rules - Plurality, Borda, Condorcet methods
+- Arrow's Impossibility Theorem - Limits of democracy
+- Strategic Voting - Manipulation and truthfulness
+
+### 🌐 **Network Games** (3 exercises)
+- Network Formation - Strategic link creation
+- Diffusion and Cascades - Information spread
+- Congestion Games - Traffic and resource allocation
+
+### 🎯 **Correlated Equilibrium and Learning** (3 exercises)
+- Correlated Equilibrium - Beyond Nash
+- Regret Minimization - No-regret learning
+- Fictitious Play - Belief-based dynamics
 
 ## 🚀 Getting Started
 

@@ -131,6 +131,116 @@
           "description": "Design games to achieve desired outcomes"
         }
       ]
+    },
+    {
+      "name": "Bargaining and Negotiation",
+      "path": "06_bargaining",
+      "description": "How players divide surplus through negotiation",
+      "exercises": [
+        {
+          "name": "Nash Bargaining Solution",
+          "file": "01_nash_bargaining.py",
+          "description": "Axiomatic approach to fair division"
+        },
+        {
+          "name": "Rubinstein Bargaining",
+          "file": "02_rubinstein_bargaining.py",
+          "description": "Strategic bargaining with alternating offers"
+        },
+        {
+          "name": "Ultimatum Game",
+          "file": "03_ultimatum_game.py",
+          "description": "Fairness and behavioral game theory"
+        }
+      ]
+    },
+    {
+      "name": "Matching Theory and Market Design",
+      "path": "07_matching",
+      "description": "Two-sided matching and stable allocations",
+      "exercises": [
+        {
+          "name": "Stable Marriage Problem",
+          "file": "01_stable_marriage.py",
+          "description": "Gale-Shapley deferred acceptance algorithm"
+        },
+        {
+          "name": "College Admissions",
+          "file": "02_college_admissions.py",
+          "description": "Many-to-one matching with preferences"
+        },
+        {
+          "name": "Kidney Exchange",
+          "file": "03_kidney_exchange.py",
+          "description": "Real-world application of matching theory"
+        }
+      ]
+    },
+    {
+      "name": "Voting and Social Choice",
+      "path": "08_voting",
+      "description": "Collective decision-making mechanisms",
+      "exercises": [
+        {
+          "name": "Voting Rules",
+          "file": "01_voting_rules.py",
+          "description": "Plurality, Borda, Condorcet methods"
+        },
+        {
+          "name": "Arrow's Impossibility Theorem",
+          "file": "02_arrows_theorem.py",
+          "description": "Limits of fair voting systems"
+        },
+        {
+          "name": "Strategic Voting",
+          "file": "03_strategic_voting.py",
+          "description": "Manipulation and truthfulness"
+        }
+      ]
+    },
+    {
+      "name": "Network Games",
+      "path": "09_networks",
+      "description": "Games on networks and strategic interactions",
+      "exercises": [
+        {
+          "name": "Network Formation",
+          "file": "01_network_formation.py",
+          "description": "How players form connections"
+        },
+        {
+          "name": "Diffusion and Cascades",
+          "file": "02_diffusion_cascades.py",
+          "description": "Information spread in networks"
+        },
+        {
+          "name": "Congestion Games",
+          "file": "03_congestion_games.py",
+          "description": "Traffic and resource allocation"
+        }
+      ]
+    },
+    {
+      "name": "Correlated Equilibrium and Learning",
+      "path": "10_learning",
+      "description": "Beyond Nash: correlation and adaptive play",
+      "exercises": [
+        {
+          "name": "Correlated Equilibrium",
+          "file": "01_correlated_equilibrium.py",
+          "description": "Public signals and coordination"
+        },
+        {
+          "name": "Regret Minimization",
+          "file": "02_regret_minimization.py",
+          "description": "No-regret learning algorithms"
+        },
+        {
+          "name": "Fictitious Play",
+          "file": "03_fictitious_play.py",
+          "description": "Learning through belief updates"
+        }
+      ]
     }
   ]
 }
