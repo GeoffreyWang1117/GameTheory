@@ -241,6 +241,126 @@
           "description": "Learning through belief updates"
         }
       ]
+    },
+    {
+      "name": "Signaling and Bayesian Games",
+      "path": "11_signaling",
+      "description": "Games with incomplete information and credible signaling",
+      "exercises": [
+        {
+          "name": "Bayesian Nash Equilibrium",
+          "file": "01_bayesian_nash.py",
+          "description": "Incomplete information and belief-based strategies"
+        },
+        {
+          "name": "Signaling Games",
+          "file": "02_signaling_games.py",
+          "description": "Spence job market signaling and perfect Bayesian equilibrium"
+        },
+        {
+          "name": "Screening Mechanisms",
+          "file": "03_screening.py",
+          "description": "Adverse selection and optimal contract menus"
+        },
+        {
+          "name": "Cheap Talk",
+          "file": "04_cheap_talk.py",
+          "description": "Costless communication and credibility"
+        }
+      ]
+    },
+    {
+      "name": "Market Competition",
+      "path": "12_market_competition",
+      "description": "Oligopoly models and strategic pricing",
+      "exercises": [
+        {
+          "name": "Cournot Competition",
+          "file": "01_cournot_competition.py",
+          "description": "Quantity competition and market equilibrium"
+        },
+        {
+          "name": "Bertrand Competition",
+          "file": "02_bertrand_competition.py",
+          "description": "Price competition and Bertrand paradox"
+        },
+        {
+          "name": "Stackelberg Leadership",
+          "file": "03_stackelberg_leadership.py",
+          "description": "Sequential moves and first-mover advantage"
+        },
+        {
+          "name": "Price Discrimination",
+          "file": "04_price_discrimination.py",
+          "description": "Monopoly pricing and consumer surplus extraction"
+        }
+      ]
+    },
+    {
+      "name": "Contract Theory",
+      "path": "13_contract_theory",
+      "description": "Optimal contracts under asymmetric information",
+      "exercises": [
+        {
+          "name": "Principal-Agent Problem",
+          "file": "01_principal_agent.py",
+          "description": "Hidden action and incentive design"
+        },
+        {
+          "name": "Moral Hazard",
+          "file": "02_moral_hazard.py",
+          "description": "Insurance, monitoring, and team production"
+        },
+        {
+          "name": "Adverse Selection",
+          "file": "03_adverse_selection.py",
+          "description": "Hidden information and screening contracts"
+        }
+      ]
+    },
+    {
+      "name": "Algorithmic Game Theory",
+      "path": "14_algorithmic",
+      "description": "Computational aspects of game theory",
+      "exercises": [
+        {
+          "name": "Price of Anarchy",
+          "file": "01_price_of_anarchy.py",
+          "description": "Efficiency loss and Braess's paradox"
+        },
+        {
+          "name": "Computing Nash Equilibria",
+          "file": "02_computing_equilibria.py",
+          "description": "Support enumeration and Lemke-Howson algorithm"
+        },
+        {
+          "name": "Computational Mechanism Design",
+          "file": "03_mechanism_computation.py",
+          "description": "VCG mechanisms and online auctions"
+        }
+      ]
+    },
+    {
+      "name": "Public Goods and Behavioral Games",
+      "path": "15_public_goods",
+      "description": "Social dilemmas and behavioral game theory",
+      "exercises": [
+        {
+          "name": "Public Goods Games",
+          "file": "01_public_goods_game.py",
+          "description": "Free-riding and voluntary contributions"
+        },
+        {
+          "name": "Behavioral Game Theory",
+          "file": "02_behavioral_game_theory.py",
+          "description": "Fairness, reciprocity, and social preferences"
+        },
+        {
+          "name": "Bounded Rationality",
+          "file": "03_bounded_rationality.py",
+          "description": "Quantal response and cognitive hierarchy"
+        }
+      ]
     }
   ]
 }
